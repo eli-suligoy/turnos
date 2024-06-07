@@ -17,7 +17,7 @@ public class DiasHorariosProfesionalesService implements IDiasHorariosProfesiona
     private IDiasHorariosProfesionalesDao entityDao;
 
     public List<DiasHorariosProfesionales> getAll() {
-        return entityDao.findAll(Sort.by(Sort.Direction.ASC,"descrip"));
+        return entityDao.findAll(Sort.by(Sort.Direction.ASC,"id"));
     }
 
 
